@@ -121,7 +121,7 @@ from moomoo.quote.quote_get_warrant import Request as WarrantRequest
 try:
     with open(os.path.join(os.path.dirname(os.path.realpath(__file__)), 'VERSION.txt'), 'rb') as f:
         __version__ = f.read().decode('ascii').strip()
-except FileExistsError:
+except FileNotFoundError:
     __version__ = '7.3.3508'
 
 
