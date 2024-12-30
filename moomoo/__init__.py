@@ -122,8 +122,7 @@ try:
     with open(os.path.join(os.path.dirname(os.path.realpath(__file__)), 'VERSION.txt'), 'rb') as f:
         __version__ = f.read().decode('ascii').strip()
 except FileNotFoundError:
-    __version__ = '7.3.3508'
-
+    __version__ = '8.8.4808'
 
 def set_futu_debug_model(on_off=True):
     common.set_debug_model(on_off)
